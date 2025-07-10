@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server شيعيه عيال كلب</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 650px; 
+            height: auto;
+            border: 2px solid #000000; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgb(0, 0, 0); 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/834435328647495680/1392925759445799082/image.png?ex=68714eb4&is=686ffd34&hm=0974e6b74636339b3795502b82a8ed02e938032b914dae83745ffe8ba70b0578&" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="https://youtu.be/Qbcgt8r6q74?si=Lo0pTL02Ousuz-h8" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h1>SL6 بعيوني</h1>
+    <h2>بعيوني ابو الشوش (3nzi)</h2>
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
